@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>钰海集团</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { canvas: "#F3F5F1", ink: "#003818", gold: "#C4A35A", khaki: "#C9B896", brown: "#3E2A1A" },
+          fontFamily: {
+            display: ['"Arial Black"', "Impact", '"Noto Sans SC"', "sans-serif"],
+            body: ['"Noto Sans SC"', "Helvetica Neue", "Arial", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <style>
+    body { background: #F3F5F1; color: #003818; }
+    .hard { box-shadow: 4px 4px 0 0 #003818; }
+    .btn-press { box-shadow: 4px 4px 0 0 #003818; transition: transform 80ms linear, box-shadow 80ms linear; }
+    .btn-press:hover, .btn-press:focus-visible, .btn-press:active { transform: translate(4px, 4px); box-shadow: 0 0 0 0 #003818; }
+  </style>
+</head>
+<body class="bg-canvas text-ink font-body antialiased">
+  <section class="relative min-h-[78vh] border-b-[2px] border-ink">
+    <img src="https://pub-534fdbc9ac57412080d9532a9def14e9.r2.dev/site-images/hero-real-estate-development.jpg" alt="构建城市地标" class="absolute inset-0 h-full w-full object-cover object-[center_52%]" />
+    <div class="absolute inset-0 bg-ink/50"></div>
+    <div class="relative mx-auto flex min-h-[78vh] max-w-[1440px] flex-col justify-end px-6 py-16 lg:px-12">
+      <p class="text-[12px] font-bold uppercase tracking-[0.22em] text-canvas">钰海集团 · YUHAI GROUP</p>
+      <h1 class="mt-4 font-display text-[14vw] leading-[0.84] text-canvas sm:text-[80px] lg:text-[104px]">
+        构建城市地标<br /><span class="text-gold">焕新美好生活</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-[17px] leading-relaxed text-canvas">立足大湾区，辐射海外澳洲。房地产开发、资产运营、康养服务与文化教育。</p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="business.html" class="btn-press border-[2px] border-ink bg-khaki px-10 py-5 text-[13px] font-bold tracking-[0.16em]">探索业务</a>
+        <a href="contact.html" class="btn-press border-[2px] border-ink bg-canvas px-10 py-5 text-[13px] font-bold tracking-[0.16em]">合作咨询</a>
+      </div>
+    </div>
+  </section>
+  <p class="px-6 py-10"><a href="group.html">集团介绍</a> · <a href="business.html">业务场景</a> · <a href="news.html">新闻中心</a> · <a href="services.html">客户服务</a> · <a href="careers.html">人力资源</a> · <a href="partners.html">合作伙伴</a> · <a href="contact.html">联系我们</a></p>
+  <script src="chrome.js"></script>
+</body>
+</html>
